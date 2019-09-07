@@ -22,6 +22,7 @@ TARGET_2ND_CPU_VARIANT := cortex-a76
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := true
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 BOARD_AVB_VBMETA_SYSTEM := product system system_ext
 BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
 BOARD_AVB_VBMETA_SYSTEM_ALGORITHM := NONE
@@ -141,4 +142,3 @@ TARGET_HAS_FUSEBLK_SEPOLICY_ON_VENDOR := true
 
 # Inherit from the radio version
 -include vendor/redmi/pissarro-firmware/BoardConfigVendor.mk
-
