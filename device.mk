@@ -46,6 +46,10 @@ AB_OTA_POSTINSTALL_CONFIG += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
+
 # Audio
 PRODUCT_PACKAGES += \
     checkpoint_gc \
