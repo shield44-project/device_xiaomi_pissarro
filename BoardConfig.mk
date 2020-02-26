@@ -128,6 +128,9 @@ VENDOR_SECURITY_PATCH := 2021-08-01
 # Sepolicy
 include device/mediatek/sepolicy/sepolicy.mk
 
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR := $(DEVICE_PATH)/sepolicy/private
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
