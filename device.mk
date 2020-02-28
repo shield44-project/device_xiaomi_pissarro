@@ -82,6 +82,7 @@ PRODUCT_CHARACTERISTICS := default
 PRODUCT_PACKAGES += \
     fstab.emmc \
     init.mt6877.rc
+    init.mtk.rc
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.emmc:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.emmc
