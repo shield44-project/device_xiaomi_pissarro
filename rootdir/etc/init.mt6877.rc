@@ -79,3 +79,8 @@ service mtk.plpath.utils.link /system/bin/mtk_plpath_utils
     disabled
     oneshot
     seclabel u:r:recovery:s0
+
+on post-fs
+    mount none /dev/null vendor/overlay/DevicesAndroidOverlay.apk bind
+    mount none /dev/null vendor/overlay/DevicesOverlay.apk bind
+    mount none /dev/null vendor/overlay/FrameworksResCommon.apk bind
