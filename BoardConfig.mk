@@ -110,7 +110,6 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
-<<<<<<< HEAD
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.emmc
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
@@ -124,8 +123,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 VENDOR_SECURITY_PATCH := 2021-08-01
 
 # Sepolicy
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
-TARGET_HAS_FUSEBLK_SEPOLICY_ON_VENDOR := true
+include device/mediatek/sepolicy/sepolicy.mk
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
