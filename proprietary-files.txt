@@ -1,8 +1,6 @@
 # Unpinned blobs from pissarro-user 11 RP1A.200720.011 V12.5.6.0.RKTINXM release-keys
 
 # Audio
-vendor/bin/hw/android.hardware.audio.service.mediatek
-vendor/etc/init/android.hardware.audio.service.mediatek.rc
 vendor/lib/hw/android.hardware.audio.effect@6.0-impl.so
 vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.mt6877.so
@@ -21,10 +19,8 @@ vendor/lib/libnvram.so
 vendor/lib/libnvram_platform.so
 vendor/lib/libnvram_sec.so
 vendor/lib/libtinyxml.so
-vendor/lib/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 vendor/lib/vendor.mediatek.hardware.mtkpower@1.0.so
-vendor/lib64/hw/android.hardware.audio.effect@6.0-impl.so
 vendor/lib64/hw/audio.primary.default.so
 vendor/lib64/hw/audio.primary.mt6877.so
 vendor/lib64/hw/audio.r_submix.default.so
@@ -42,7 +38,6 @@ vendor/lib64/libnvram.so
 vendor/lib64/libnvram_platform.so
 vendor/lib64/libnvram_sec.so
 vendor/lib64/libtinyxml.so
-vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 vendor/lib64/vendor.mediatek.hardware.mtkpower@1.0.so
 
@@ -1190,7 +1185,6 @@ vendor/lib/libaudiocomponentenginec.so
 vendor/lib/libaudiodcrflt_vendor.so
 vendor/lib/libaudiofmtconv.so
 vendor/lib/libaudioloudc.so
-vendor/lib/libaudioprimarydevicehalifclient.so
 vendor/lib/libaurisysdemo.so
 vendor/lib/libbessound_hd_mtk_vendor.so
 vendor/lib/libblisrc32_vendor.so
@@ -2164,7 +2158,6 @@ vendor/lib64/libaudiocomponentenginec.so
 vendor/lib64/libaudiodcrflt_vendor.so
 vendor/lib64/libaudiofmtconv.so
 vendor/lib64/libaudioloudc.so
-vendor/lib64/libaudioprimarydevicehalifclient.so
 vendor/lib64/libaurisysdemo.so
 vendor/lib64/libbeauty_face_interface.so
 vendor/lib64/libbessound_hd_mtk_vendor.so
