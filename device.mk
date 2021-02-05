@@ -200,6 +200,9 @@ PRODUCT_COPY_FILES += \
 # Telephony
 PRODUCT_PACKAGES += vendor.mediatek.hardware.videotelephony@1.0
 
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml
+
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
