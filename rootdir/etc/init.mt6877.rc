@@ -66,3 +66,5 @@ service wait_for_keymaster /system/bin/wait_for_keymaster
     priority -20
     ioprio rt 0
 
+on property:sys.boot_completed=1
+    chmod 0640 /sys/fs/selinux/enforce
