@@ -68,6 +68,7 @@ service wait_for_keymaster /system/bin/wait_for_keymaster
 
 on property:sys.boot_completed=1
     chmod 0640 /sys/fs/selinux/enforce
+    chmod 0440 /sys/fs/selinux/policy
 
 on post-fs
     start mtk.plpath.utils.link
