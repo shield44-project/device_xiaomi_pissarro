@@ -43,6 +43,7 @@ AB_OTA_POSTINSTALL_CONFIG += \
     POSTINSTALL_OPTIONAL_vendor=true
 
 # Overlays
+PRODUCT_ENFORCE_RRO_TARGETS := *
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
 
@@ -69,9 +70,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.manager@1.0
-
-# Overlays
-PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Product characteristics
 PRODUCT_CHARACTERISTICS := default
