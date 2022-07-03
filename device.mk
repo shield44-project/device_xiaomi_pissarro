@@ -81,7 +81,12 @@ PRODUCT_CHARACTERISTICS := default
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.emmc \
-    init.mt6877.rc
+    init.mt6877.rc \
+    init.mt6877.usb.rc \
+    init.connectivity.rc \
+    init.project.rc \
+    multi_init.rc \
+    init.sensor_2_0.rc \
     init.mtk.rc
 
 PRODUCT_COPY_FILES += \
