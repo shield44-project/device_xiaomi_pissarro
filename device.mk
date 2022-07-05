@@ -196,6 +196,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.emmc \
     init.mt6877.rc \
+    factory_init.connectivity.rc \
+    init.ago.rc \
     init.mt6877.usb.rc \
     init.connectivity.rc \
     init.project.rc \
