@@ -203,7 +203,6 @@ PRODUCT_PACKAGES += \
     init.project.rc \
     multi_init.rc \
     init.sensor_2_0.rc \
-    init.mtk.rc \
     fstab.enableswap \
     fstab.mt6877 \
     ueventd.qcom.rc
