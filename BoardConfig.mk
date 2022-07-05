@@ -110,7 +110,7 @@ BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
 TARGET_COPY_OUT_ODM := odm
-TARGET _COPY_OUT_PRODUCT := product
+TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
 
@@ -141,7 +141,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 VENDOR_SECURITY_PATCH := 2021-08-01
 
 # Sepolicy
-include device/mediatek/sepolicy/sepolicy.mk
+include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR := $(DEVICE_PATH)/sepolicy/private
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor

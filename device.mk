@@ -45,10 +45,14 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_vendor=ext4 \
     POSTINSTALL_OPTIONAL_vendor=true
 
+PRODUCT_PACKAGES += \
+    checkpoint_gc \
+    otapreopt_script
+
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay
+    $(LOCAL_PATH)/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -221,7 +225,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
 # Telephony
-PRODUCT_PACKAGES += vendor.mediatek.hardware.videotelephony@1.0
+#PRODUCT_PACKAGES += vendor.mediatek.hardware.videotelephony@1.0
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml
@@ -236,7 +240,6 @@ PRODUCT_PACKAGES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-<<<<<<< HEAD
     android.hardware.wifi@1.0-service \
     hostapd \
     TetheringConfigOverlay \
