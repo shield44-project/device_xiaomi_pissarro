@@ -6,6 +6,7 @@ ro.all_modes.colorpick_adjust=true
 ro.audio.silent=0
 ro.camera.sound.forced=0
 ro.colorpick_adjust=true
+ro.charger.enable_suspend=true
 ro.displayfeature.histogram.enable=false
 ro.iorapd.enable=false
 ro.kernel.zio=38,108,105,16
