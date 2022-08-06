@@ -134,3 +134,7 @@ VENDOR_SECURITY_PATCH := 2021-08-01
 SELINUX_IGNORE_NEVERALLOWS := true
 TARGET_USES_PREBUILT_VENDOR_SEPOLICY := true
 TARGET_HAS_FUSEBLK_SEPOLICY_ON_VENDOR := true
+
+# Inherit from the radio version
+-include vendor/redmi/pissarro-firmware/BoardConfigVendor.mk
+
