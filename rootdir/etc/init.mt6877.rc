@@ -68,3 +68,14 @@ service wait_for_keymaster /system/bin/wait_for_keymaster
 
 on property:sys.boot_completed=1
     chmod 0640 /sys/fs/selinux/enforce
+
+on post-fs
+    start mtk.plpath.utils.link
+
+service mtk.plpath.utils.link /system/bin/mtk_plpath_utils
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+    seclabel u:r:recovery:s0
