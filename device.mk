@@ -52,6 +52,10 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-mtkimpl.recovery
 
+# Display
+PRODUCT_PACKAGES += \
+    libvulkan
+
 # Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
