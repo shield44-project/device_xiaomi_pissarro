@@ -70,7 +70,11 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    init.mt6877.rc
+    init.mt6877.rc \
+    fstab.mt6877 \
+    fstab.mt6877_ramdisk
+
+PRODUCT_COPY_FILES +=  $(DEVICE_PATH)/rootdir/etc/fstab.mt6877:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/etc/fstab.mt6877
 
 # IDC
 PRODUCT_COPY_FILES += \
