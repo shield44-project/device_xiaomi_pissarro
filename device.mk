@@ -130,3 +130,6 @@ PRODUCT_SOONG_NAMESPACES += \
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 30
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
+
+# Vendor blobs
+$(call inherit-product, vendor/xiaomi/pissarro/pissarro-vendor.mk)
